@@ -1,4 +1,7 @@
 Revision history for Template-Plugin-DtFormatter-RelativeDate
 
+0.02    2007-07-29 11:00:00
+	t/01-functions.t
+
 0.01    2007-07-28 22:34:00
         First version, released on an unsuspecting world.

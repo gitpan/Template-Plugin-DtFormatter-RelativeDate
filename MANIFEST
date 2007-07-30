@@ -8,6 +8,7 @@ lib/Template/Plugin/DtFormatter/RelativeDate/I18N.pm
 lib/Template/Plugin/DtFormatter/RelativeDate/I18N/en.pm
 lib/Template/Plugin/DtFormatter/RelativeDate/I18N/ja.pm
 t/00-load.t
+t/01-functions.t
 t/boilerplate.t
 t/pod-coverage.t
 t/pod.t
