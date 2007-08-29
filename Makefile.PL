@@ -10,6 +10,7 @@ WriteMakefile(
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More'                => 0,
+        'Test::Base'                => 0,
         'Template'                  => 0,
         'DateTime::Format::Natural' => 0,
         'Locale::Maketext'          => 0,

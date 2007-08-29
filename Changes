@@ -1,5 +1,8 @@
 Revision history for Template-Plugin-DtFormatter-RelativeDate
 
+0.03    2007-08-29 15:30:00
+	add Test::Base to PREREQ_PM.
+
 0.02    2007-07-29 11:00:00
 	t/01-functions.t
 
