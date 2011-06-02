@@ -51,6 +51,7 @@ sub tt {
     ok( $tt->process(\'[% USE DtFormatter.RelativeDate %]'), "USE in template." );
 }
 
+no warnings qw(once);
 $Template::Plugin::DtFormatter::RelativeDate::MOCK = 1;
 run_is input => 'expected';
 

@@ -24,7 +24,7 @@ Version 0.03
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 SYNOPSIS
 
@@ -77,8 +77,10 @@ sub formatter {
 
     my $lh  = Template::Plugin::DtFormatter::RelativeDate::I18N->get_handle($lang);
 
-    sub {
+    return sub {
         my $dt = shift;
+
+        local $NATURAL->{Time_zone} = $dt->{tz} if ref($dt) and $dt->isa("DateTime");
         
         for my $string (qw/today yesterday tomorrow/) {
             $memoize{$string} ||= $NATURAL->parse_datetime($string);
@@ -86,7 +88,7 @@ sub formatter {
         }
 
         return $format ? $dt->strftime($format) : $dt->ymd;
-    }
+    };
 }
 
 =head1 AUTHOR

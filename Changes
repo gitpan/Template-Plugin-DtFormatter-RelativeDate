@@ -1,5 +1,8 @@
 Revision history for Template-Plugin-DtFormatter-RelativeDate
 
+0.04    2011-06-02 11:26:00
+	Added IN18N::no. norwegian translation. Thanks to Marcus Ramberg.
+
 0.03    2007-08-29 15:30:00
 	add Test::Base to PREREQ_PM.
 
